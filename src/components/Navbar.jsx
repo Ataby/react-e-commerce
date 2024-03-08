@@ -36,7 +36,8 @@ const Navbar = () => {
                 <FiShoppingBag fontSize="32" className='cursor-pointer'/>
             </div>
             <div onClick={()=> setcolor(!color)}>
-                {color ? <MdOutlineDarkMode fontSize="22" className='cursor-pointer'/> : <IoMdMoon fontSize="22" className='cursor-pointer' /> }               
+                {color ? <MdOutlineDarkMode fontSize="22" className='cursor-pointer'/> 
+                : <IoMdMoon fontSize="22" className='cursor-pointer' /> }               
             </div>
 
         </div>
