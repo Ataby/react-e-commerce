@@ -9,7 +9,7 @@ const productsReducer =(state = initialState, { type, payload }) => {
     return { products: payload }
 
   default:
-    return state
+    return {state}
   }
 }
 

@@ -5,14 +5,14 @@ product:{}
 const productDetail =(state = initialState, { type, payload }) => {
     switch (type) {
   
-    case "GET_DETAILS":
+    case "GET_DETAIL":
       return { 
         ...state,
         product: payload }
   
     default:
-      return state
+      return {state}
     }
   }
-  
+  export default productDetail
 
