@@ -6,12 +6,12 @@ import Home from "./pages/Home";
 import Details from "./pages/Details";
 import PageContainers from "./containers/PageContainers";
 import { useSelector } from "react-redux";
-import Card from "./components/Card";
+import Cart from "./components/Cart";
 
 
 function App() {
   const {drawer}=useSelector(state => state.drawer);
-  console.log(drawer)
+  
   return (
     <div className="App">
       <PageContainers>
@@ -19,9 +19,9 @@ function App() {
         <Navbar/>
         <Routes>
           <Route index element={<Home/>} />  
-          <Route path="detail" element={<Details/>} />  
+          <Route path="detail/:id" element={<Details/>} />  
         </Routes>
-        {drawer && <Card/>}
+        {drawer && <Cart/>}
         <Footer/>
       </BrowserRouter>
       </PageContainers>
