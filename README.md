@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# PROJECT LINK HERE
+https://atabay-e-commerce.netlify.app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
